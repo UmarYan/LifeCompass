@@ -1,26 +1,9 @@
-LifeCompass PWA — Version 0.2
-=============================
+LifeCompass PWA v0.3
 
-v0.2 enhancements:
-- Custom LifeCompass app icon (192px and 512px PNG, scalable SVG, Apple touch icon)
-- Manifest icons with maskable icon support for Android launchers
-- Install App button and browser install prompt integration
-- Updated service worker cache version and cache cleanup
-- Apple mobile web app metadata
-- Retains v0.1 assessment data model and features
+New in v0.3: 90-Day Priority action-step progress tracking. Each action step can be checked off, progress percentage/count is shown, and progress is saved locally. Existing v0.2 assessment, analysis, plan, review history, backup/restore, CSV export, app install support and icons are retained.
 
-Deploy:
-1. Extract the ZIP.
-2. Upload the contents of LifeCompass_PWA_v0.2 folder to an HTTPS static host (GitHub Pages, Netlify, etc).
-3. Open the hosted URL in Chrome on Android.
-4. Use Install App button if the browser prompt appears. If not, Chrome menu (⋮) > Install app / Add to Home screen.
-5. Launch from home screen.
+Install: deploy this folder to an HTTPS host (for example GitHub Pages), open the deployed app in Chrome, then choose Install App or Chrome menu > Install app / Add to Home screen.
 
-PWA install requirements:
-- HTTPS or localhost
-- valid manifest and registered service worker
-- browser installability conditions may vary by browser/version
+Data stays in this browser's localStorage. Export a Backup regularly. Restore replaces current data after confirmation.
 
-Data:
-All assessment data remains in browser LocalStorage; there is no login/cloud sync.
-Export JSON backup regularly. This is a self-reflection tool, not a diagnostic tool.
+Validation: inline JavaScript and service worker syntax checked; manifest/icon dimensions and ZIP integrity checked. Browser install testing was not performed.

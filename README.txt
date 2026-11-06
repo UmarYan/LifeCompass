@@ -1,16 +1,29 @@
-LifeCompass PWA v0.4
+LifeCompass PWA — Version 0.4 (Rebuilt on v0.2 base)
+===================================================
 
-Functional upgrade built on v0.3. Includes:
-- Improved assessment rating anchors (1-2, 3-4, 5-6, 7-8, 9-10) and clear completion context.
-- Deterministic Smart Priority Suggestions: highlights the lowest rated domains and gives domain-specific action ideas. Suggestions are transparent, score-based, not AI diagnosis.
-- Detailed Life Assessment Report: overall/completion snapshot, higher/lower domains, domain score table, reflections and SWOT inputs, practical next steps; print / Save as PDF.
-- Assessment Comparison: compare saved review snapshots by domain, overall score, completion percentage and change.
-- Goal progress tracking: step checkboxes and percentage display, persisted locally.
-- Mobile dashboard refinements: improved responsive card spacing, stats and touch layout.
-- Existing assessment, Life Wheel, Deep Analysis, 90-Day Plan, Review History, Backup/Restore, CSV, PWA icons/install support preserved.
+This rebuild uses the v0.2 package as the starting base, retaining its PWA install support, manifest and app icons. The v0.4 assessment and review improvements are layered on top.
 
-Install: deploy this folder to HTTPS hosting (e.g. GitHub Pages), open it in Chrome and use Install App or browser menu > Install app / Add to Home screen.
+Features:
+- Advanced assessment questionnaire and domain reflections
+- Assessment-based smart priority suggestions
+- Detailed life assessment report with print / Save as PDF
+- Assessment review snapshot comparison
+- Goal action-step progress tracking
+- Improved responsive mobile dashboard
+- Life Wheel, Deep Analysis / SWOT, 90-Day Plan, Review History
+- Backup / Restore and CSV scorecard export
+- App icons, install prompt and PWA support
 
-Data is saved in this browser's localStorage. Export a Backup periodically. Restore replaces current data after confirmation. Comparison requires at least two saved review snapshots.
+Deploy:
+1. Extract the ZIP.
+2. Upload the folder contents to an HTTPS static host (GitHub Pages, Netlify, etc.).
+3. Open the hosted URL in Chrome on Android and use Install App or Chrome menu > Install app / Add to Home screen.
 
-Validation: inline JavaScript and service worker syntax checked; manifest parsed; icon dimensions checked; ZIP integrity checked. Browser UI and installation testing were not performed.
+Data:
+Assessment information is stored in browser LocalStorage; there is no login/cloud sync. Export JSON backups regularly. This is a self-reflection tool, not a clinical or psychological diagnostic tool.
+
+Validation:
+JavaScript and service-worker syntax, manifest parsing, icon dimensions and ZIP integrity were checked. Browser/device install testing was not performed.
+
+
+LifeCompass PWA v0.5 — Assessment UI update: horizontal scrollable domain tabs and contained vertical question/reflection pane with sticky Previous/Next controls.

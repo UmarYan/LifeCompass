@@ -1,22 +1,26 @@
-LifeCompass PWA — First working build
+LifeCompass PWA — Version 0.2
+=============================
 
-Files:
-- index.html: app UI + assessment and storage logic
-- manifest.json: install metadata
-- sw.js: basic offline cache
+v0.2 enhancements:
+- Custom LifeCompass app icon (192px and 512px PNG, scalable SVG, Apple touch icon)
+- Manifest icons with maskable icon support for Android launchers
+- Install App button and browser install prompt integration
+- Updated service worker cache version and cache cleanup
+- Apple mobile web app metadata
+- Retains v0.1 assessment data model and features
 
-Run locally:
-Open index.html in a modern browser. LocalStorage persistence works. PWA installation and service worker offline cache require serving over HTTPS or localhost (e.g. GitHub Pages).
+Deploy:
+1. Extract the ZIP.
+2. Upload the contents of LifeCompass_PWA_v0.2 folder to an HTTPS static host (GitHub Pages, Netlify, etc).
+3. Open the hosted URL in Chrome on Android.
+4. Use Install App button if the browser prompt appears. If not, Chrome menu (⋮) > Install app / Add to Home screen.
+5. Launch from home screen.
 
-Features:
-- 15 life domains, 75 self-rating questions (1–10)
-- Domain reflections, overview scorecard, Life Wheel visualization
-- SWOT + root cause + Continue/Improve/Stop/Start analysis
-- 90-day plan, max 3 recommended priorities, action steps, weekly check-in
-- Review snapshots, JSON backup/restore, CSV score export
-- Bengali UI, responsive mobile layout
+PWA install requirements:
+- HTTPS or localhost
+- valid manifest and registered service worker
+- browser installability conditions may vary by browser/version
 
-Privacy:
-Data remains in this browser's LocalStorage. Clearing browser site data may remove it. Export a JSON backup regularly. No login or cloud sync.
-
-Note: This is a self-reflection tool, not a clinical diagnostic instrument.
+Data:
+All assessment data remains in browser LocalStorage; there is no login/cloud sync.
+Export JSON backup regularly. This is a self-reflection tool, not a diagnostic tool.
